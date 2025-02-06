@@ -29,7 +29,7 @@ function checkGuess() {
 
   hideAllMessages();
 
-  if (guess === targetNumber) {
+  if (let guess === targetNumber) {
     numberOfGuessesMessage.style.display = '';
     numberOfGuessesMessage.innerHTML = `You made ${attempts} guesses`;
 
@@ -45,6 +45,7 @@ function checkGuess() {
     } else {
       tooLowMessage.style.display = '';
     }
+  
 
     const remainingAttempts = maxNumberOfAttempts - attempts;
 
@@ -68,7 +69,7 @@ function hideAllMessages() {
   }
 }
 
-funtion setup() {
+function setup() {
   // Get random number
   targetNumber = getRandomNumber(1, 100);
   console.log(`target number: ${targetNumber}`);
